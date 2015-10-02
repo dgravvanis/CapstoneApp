@@ -17,6 +17,7 @@
 		B71677E31BBECBCB002CCD4B /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */; };
 		B71677F11BBECE4E002CCD4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B71677F01BBECE4E002CCD4B /* README.md */; settings = {ASSET_TAGS = (); }; };
 		B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
+		B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B71677E41BBECBCB002CCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71677F01BBECE4E002CCD4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinAverageApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */,
+				B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */,
 				B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */,
 				B71677C21BBECBCB002CCD4B /* ViewController.swift in Sources */,
 				B71677C81BBECBCB002CCD4B /* CapstoneApp.xcdatamodeld in Sources */,
