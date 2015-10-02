@@ -15,6 +15,7 @@
 		B71677CD1BBECBCB002CCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71677CB1BBECBCB002CCD4B /* LaunchScreen.storyboard */; };
 		B71677D81BBECBCB002CCD4B /* CapstoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677D71BBECBCB002CCD4B /* CapstoneAppTests.swift */; };
 		B71677E31BBECBCB002CCD4B /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */; };
+		B71677F11BBECE4E002CCD4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B71677F01BBECE4E002CCD4B /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B71677DE1BBECBCB002CCD4B /* CapstoneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapstoneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppUITests.swift; sourceTree = "<group>"; };
 		B71677E41BBECBCB002CCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B71677F01BBECE4E002CCD4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		B71677B31BBECBCB002CCD4B = {
 			isa = PBXGroup;
 			children = (
+				B71677F01BBECE4E002CCD4B /* README.md */,
 				B71677BE1BBECBCB002CCD4B /* CapstoneApp */,
 				B71677D61BBECBCB002CCD4B /* CapstoneAppTests */,
 				B71677E11BBECBCB002CCD4B /* CapstoneAppUITests */,
@@ -260,6 +263,7 @@
 			files = (
 				B71677C21BBECBCB002CCD4B /* ViewController.swift in Sources */,
 				B71677C81BBECBCB002CCD4B /* CapstoneApp.xcdatamodeld in Sources */,
+				B71677F11BBECE4E002CCD4B /* README.md in Sources */,
 				B71677C01BBECBCB002CCD4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +491,7 @@
 				B71677E91BBECBCB002CCD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B71677EA1BBECBCB002CCD4B /* Build configuration list for PBXNativeTarget "CapstoneAppTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				B71677EC1BBECBCB002CCD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B71677ED1BBECBCB002CCD4B /* Build configuration list for PBXNativeTarget "CapstoneAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				B71677EF1BBECBCB002CCD4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
