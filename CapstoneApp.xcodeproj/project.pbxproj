@@ -16,6 +16,7 @@
 		B71677D81BBECBCB002CCD4B /* CapstoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677D71BBECBCB002CCD4B /* CapstoneAppTests.swift */; };
 		B71677E31BBECBCB002CCD4B /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */; };
 		B71677F11BBECE4E002CCD4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B71677F01BBECE4E002CCD4B /* README.md */; settings = {ASSET_TAGS = (); }; };
+		B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapstoneAppUITests.swift; sourceTree = "<group>"; };
 		B71677E41BBECBCB002CCD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71677F01BBECE4E002CCD4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,10 @@
 		B71677BE1BBECBCB002CCD4B /* CapstoneApp */ = {
 			isa = PBXGroup;
 			children = (
+				B71677F21BBECF54002CCD4B /* Model */,
+				B71677F31BBECF5E002CCD4B /* View */,
+				B71677F41BBECF66002CCD4B /* Controller */,
 				B71677BF1BBECBCB002CCD4B /* AppDelegate.swift */,
-				B71677C11BBECBCB002CCD4B /* ViewController.swift */,
 				B71677C31BBECBCB002CCD4B /* Main.storyboard */,
 				B71677C91BBECBCB002CCD4B /* Assets.xcassets */,
 				B71677CB1BBECBCB002CCD4B /* LaunchScreen.storyboard */,
@@ -129,6 +133,29 @@
 				B71677E41BBECBCB002CCD4B /* Info.plist */,
 			);
 			path = CapstoneAppUITests;
+			sourceTree = "<group>";
+		};
+		B71677F21BBECF54002CCD4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B71677F31BBECF5E002CCD4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B71677C11BBECBCB002CCD4B /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B71677F41BBECF66002CCD4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */,
 				B71677C21BBECBCB002CCD4B /* ViewController.swift in Sources */,
 				B71677C81BBECBCB002CCD4B /* CapstoneApp.xcdatamodeld in Sources */,
 				B71677F11BBECE4E002CCD4B /* README.md in Sources */,
