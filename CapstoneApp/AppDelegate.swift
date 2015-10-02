@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Get the keys from the plist file
+        if let filePath = NSBundle.mainBundle().pathForResource("Keys", ofType:"plist"),
+            let privateKeys = NSDictionary(contentsOfFile:filePath),
+            let parseClientKey = privateKeys.objectForKey("ParseClientKey") as? String,
+            let parseApplicationId = privateKeys.objectForKey("ParseApplicationId") as? String {
+                
+                // Initialize Parse
+                Parse.setApplicationId(parseApplicationId, clientKey: parseClientKey)
+        } else {
+            // Handle error
+            print("Failed to initialize Parse")
+        }
+        
         return true
     }
 
