@@ -20,6 +20,7 @@
 		B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */; settings = {ASSET_TAGS = (); }; };
 		B71677FA1BBEDE24002CCD4B /* FiatTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		B71677FC1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		B71678221BBEEE41002CCD4B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71678211BBEEE41002CCD4B /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinAverageApiClient.swift; sourceTree = "<group>"; };
 		B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiatTextFieldDelegate.swift; sourceTree = "<group>"; };
 		B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinTextFieldDelegate.swift; sourceTree = "<group>"; };
+		B71678211BBEEE41002CCD4B /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		B71677B31BBECBCB002CCD4B = {
 			isa = PBXGroup;
 			children = (
+				B71678211BBEEE41002CCD4B /* Keys.plist */,
 				B71677F01BBECE4E002CCD4B /* README.md */,
 				B71677BE1BBECBCB002CCD4B /* CapstoneApp */,
 				B71677D61BBECBCB002CCD4B /* CapstoneAppTests */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71678221BBEEE41002CCD4B /* Keys.plist in Resources */,
 				B71677CD1BBECBCB002CCD4B /* LaunchScreen.storyboard in Resources */,
 				B71677CA1BBECBCB002CCD4B /* Assets.xcassets in Resources */,
 				B71677C51BBECBCB002CCD4B /* Main.storyboard in Resources */,
