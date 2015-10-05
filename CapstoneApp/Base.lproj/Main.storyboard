@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CapstoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kk2-gr-mL5">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ak-pC-ZtT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kk2-gr-mL5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="77q-o8-6Y0"/>
+                            <constraint firstItem="kk2-gr-mL5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hnT-yD-YkU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="frn-uN-6rd">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="cwQ-ih-c8C" customClass="SignUpViewController" customModule="CapstoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l4u-iC-xXB"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1U-xu-Dwf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pfq-fI-XWG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9C-m6-825" customClass="UsernameTextField" customModule="CapstoneApp" customModuleProvider="target">
+                                <rect key="frame" x="252" y="165" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOc-kM-oGI" customClass="EmailTextField" customModule="CapstoneApp" customModuleProvider="target">
+                                <rect key="frame" x="252" y="214" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SignUpViewController" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gb-Ia-Qzs">
+                                <rect key="frame" x="277" y="314" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTouch:" destination="cwQ-ih-c8C" eventType="touchUpInside" id="F5O-JY-4PW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYO-PL-3cx" customClass="PasswordTextField" customModule="CapstoneApp" customModuleProvider="target">
+                                <rect key="frame" x="252" y="263" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MVd-Lt-mQ7"/>
+                                    <constraint firstAttribute="width" constant="97" id="XTQ-Fk-KU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iOc-kM-oGI" firstAttribute="leading" secondItem="I9C-m6-825" secondAttribute="leading" id="CR8-YN-zs5"/>
+                            <constraint firstItem="iOc-kM-oGI" firstAttribute="centerX" secondItem="Pfq-fI-XWG" secondAttribute="centerX" id="M2t-qt-3KR"/>
+                            <constraint firstItem="f1U-xu-Dwf" firstAttribute="top" secondItem="7gb-Ia-Qzs" secondAttribute="bottom" constant="256" id="VF8-vY-lUt"/>
+                            <constraint firstItem="iOc-kM-oGI" firstAttribute="top" secondItem="I9C-m6-825" secondAttribute="bottom" constant="19" id="YKQ-jT-uNE"/>
+                            <constraint firstItem="sYO-PL-3cx" firstAttribute="trailing" secondItem="I9C-m6-825" secondAttribute="trailing" id="bUV-Yi-h7d"/>
+                            <constraint firstItem="iOc-kM-oGI" firstAttribute="trailing" secondItem="I9C-m6-825" secondAttribute="trailing" id="d4U-2a-dr9"/>
+                            <constraint firstItem="sYO-PL-3cx" firstAttribute="centerX" secondItem="Pfq-fI-XWG" secondAttribute="centerX" id="hBp-Fo-ONX"/>
+                            <constraint firstItem="sYO-PL-3cx" firstAttribute="top" secondItem="iOc-kM-oGI" secondAttribute="bottom" constant="19" id="kze-0x-oX3"/>
+                            <constraint firstItem="I9C-m6-825" firstAttribute="centerX" secondItem="Pfq-fI-XWG" secondAttribute="centerX" id="mU4-ct-UCg"/>
+                            <constraint firstItem="7gb-Ia-Qzs" firstAttribute="top" secondItem="sYO-PL-3cx" secondAttribute="bottom" constant="21" id="mqZ-Kc-rKb"/>
+                            <constraint firstItem="sYO-PL-3cx" firstAttribute="leading" secondItem="I9C-m6-825" secondAttribute="leading" id="nBC-e8-we6"/>
+                            <constraint firstItem="7gb-Ia-Qzs" firstAttribute="centerX" secondItem="Pfq-fI-XWG" secondAttribute="centerX" id="zs4-vp-sWs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="iOc-kM-oGI" id="0IZ-PO-Dkz"/>
+                        <outlet property="passwordTextField" destination="sYO-PL-3cx" id="VRj-wz-JMA"/>
+                        <outlet property="usernameTextField" destination="I9C-m6-825" id="301-rZ-gFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ck6-xh-vAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="1503"/>
         </scene>
     </scenes>
 </document>

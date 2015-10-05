@@ -35,6 +35,12 @@
 		B716783B1BBEF875002CCD4B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783A1BBEF875002CCD4B /* libsqlite3.tbd */; };
 		B716783D1BBEF8A5002CCD4B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783C1BBEF8A5002CCD4B /* Accounts.framework */; };
 		B716783F1BBEF8B1002CCD4B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783E1BBEF8B1002CCD4B /* Social.framework */; };
+		B742FCCF1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		B79C5B6F1BC01B5D00BAB262 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B79C5B711BC0308900BAB262 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B701BC0308900BAB262 /* EmailTextField.swift */; settings = {ASSET_TAGS = (); }; };
+		B79C5B731BC039BD00BAB262 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */; settings = {ASSET_TAGS = (); }; };
+		B79C5B751BC03AA800BAB262 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B741BC03AA800BAB262 /* UsernameTextField.swift */; settings = {ASSET_TAGS = (); }; };
+		B79C5B771BC042A600BAB262 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B761BC042A600BAB262 /* UITextFieldExtension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,12 @@
 		B716783A1BBEF875002CCD4B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		B716783C1BBEF8A5002CCD4B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B716783E1BBEF8B1002CCD4B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B79C5B701BC0308900BAB262 /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		B79C5B741BC03AA800BAB262 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		B79C5B761BC042A600BAB262 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,7 @@
 				B71677F21BBECF54002CCD4B /* Model */,
 				B71677F31BBECF5E002CCD4B /* View */,
 				B71677F41BBECF66002CCD4B /* Controller */,
+				B79C5B781BC0449700BAB262 /* Extensions */,
 				B71677BF1BBECBCB002CCD4B /* AppDelegate.swift */,
 				B71677C31BBECBCB002CCD4B /* Main.storyboard */,
 				B71677C91BBECBCB002CCD4B /* Assets.xcassets */,
@@ -199,6 +212,9 @@
 		B71677F31BBECF5E002CCD4B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B79C5B701BC0308900BAB262 /* EmailTextField.swift */,
+				B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */,
+				B79C5B741BC03AA800BAB262 /* UsernameTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -206,6 +222,7 @@
 		B71677F41BBECF66002CCD4B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */,
 				B71677C11BBECBCB002CCD4B /* ViewController.swift */,
 				B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */,
 				B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */,
@@ -232,6 +249,15 @@
 				B71678241BBEF733002CCD4B /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B79C5B781BC0449700BAB262 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B79C5B761BC042A600BAB262 /* UITextFieldExtension.swift */,
+				B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,12 +393,18 @@
 			files = (
 				B71677FA1BBEDE24002CCD4B /* FiatTextFieldDelegate.swift in Sources */,
 				B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */,
+				B79C5B711BC0308900BAB262 /* EmailTextField.swift in Sources */,
 				B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */,
 				B71677C21BBECBCB002CCD4B /* ViewController.swift in Sources */,
 				B71677C81BBECBCB002CCD4B /* CapstoneApp.xcdatamodeld in Sources */,
 				B71677FC1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift in Sources */,
+				B79C5B6F1BC01B5D00BAB262 /* SignUpViewController.swift in Sources */,
 				B71677F11BBECE4E002CCD4B /* README.md in Sources */,
+				B79C5B731BC039BD00BAB262 /* PasswordTextField.swift in Sources */,
+				B79C5B771BC042A600BAB262 /* UITextFieldExtension.swift in Sources */,
 				B71677C01BBECBCB002CCD4B /* AppDelegate.swift in Sources */,
+				B742FCCF1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift in Sources */,
+				B79C5B751BC03AA800BAB262 /* UsernameTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

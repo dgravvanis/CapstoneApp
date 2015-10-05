@@ -14,13 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        // Create Parse test object and save to cloud
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            print("Object has been saved.")
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +21,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonTouch(sender: UIButton) {
+        
+        if let viewController = storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") {
+            presentViewController(viewController, animated: true, completion: nil)
+        }
+    }
 
 }
 
