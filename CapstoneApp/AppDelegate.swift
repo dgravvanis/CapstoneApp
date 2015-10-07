@@ -32,6 +32,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Failed to initialize Parse")
         }
         
+        // If there is a stored session skip HomeViewController
+        if PFUser.currentUser() != nil {
+            
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let rootView = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+            window?.rootViewController = rootView
+        }
+        
         return true
     }
 

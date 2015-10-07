@@ -9,11 +9,32 @@
 import UIKit
 import Parse
 
+// MARK: Class
 class ViewController: UIViewController {
 
+    // MARK: - Properties
+    var currentUser: PFUser?
+    
+    // MARK: - Outlets
+    @IBOutlet weak var label: UILabel!
+    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        currentUser = PFUser.currentUser()
+        
+        // Check if a user is logged in
+        guard let user = currentUser else {
+            
+            // Hide label
+            label.hidden = true
+            return
+        }
+        // Do stuff with the user
+        label.text = "Hello \(user.username!)"
+        label.hidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,12 +42,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func buttonTouch(sender: UIButton) {
-        
-        if let viewController = storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") {
-            presentViewController(viewController, animated: true, completion: nil)
-        }
-    }
+    // MARK: - Methods
+    // MARK: - Actions
 
 }
 

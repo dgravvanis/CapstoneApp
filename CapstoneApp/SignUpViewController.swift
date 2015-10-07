@@ -6,7 +6,6 @@
 //  Copyright © 2015 Dimitrios Gravvanis. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Parse
 
@@ -31,7 +30,12 @@ class SignUpViewController: UIViewController {
     }
     
     // MARK: - Actions
-    @IBAction func buttonTouch(sender: UIButton) {
+    @IBAction func closeButtonTouched(sender: UIButton) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func singUpButtonTouched(sender: UIButton) {
         
         // Check if user completed the form
         if usernameTextField.text?.isEmpty == true {
@@ -62,8 +66,9 @@ class SignUpViewController: UIViewController {
                     self.presentError("Alert", message: errorString)
                     
             } else {
-                // Dismiss SignUpViewController
-                self.dismissViewControllerAnimated(true, completion: nil)
+                
+                // Perform segue
+                self.performSegueWithIdentifier("SignUpSegue", sender: self)
             }
             
         }
