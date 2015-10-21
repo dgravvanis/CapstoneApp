@@ -44,6 +44,9 @@ class ViewController: UIViewController {
 
     // MARK: - Methods
     // MARK: - Actions
-
+    @IBAction func createButtonTouched(sender: UIButton) {
+        
+        performSegueWithIdentifier("CreateListingSegue", sender: self)
+    }
 }
 

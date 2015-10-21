@@ -1,5 +1,5 @@
 //
-//  ContentViewController.swift
+//  PhotoDisplayViewController.swift
 //  CapstoneApp
 //
 //  Created by Dimitrios Gravvanis on 7/10/15.
@@ -9,13 +9,12 @@
 import UIKit
 
 // MARK: Class
-class ContentViewController: UIViewController {
+class PhotoDisplayViewController: PageContentViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIImageView!
     
     // MARK: - Properties
-    var pageIndex: Int!
     var imageFile: String!
     
     // MARK: - Lifecycle Methods
@@ -30,16 +29,4 @@ class ContentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

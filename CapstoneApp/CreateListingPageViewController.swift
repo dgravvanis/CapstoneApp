@@ -1,25 +1,23 @@
 //
-//  HomeViewController.swift
+//  CreateListingPageViewController.swift
 //  CapstoneApp
 //
-//  Created by Dimitrios Gravvanis on 7/10/15.
+//  Created by Dimitrios Gravvanis on 10/10/15.
 //  Copyright © 2015 Dimitrios Gravvanis. All rights reserved.
 //
 
 import UIKit
 
 // MARK: Class
-class HomeViewController: UIViewController, UIPageViewControllerDataSource {
+class CreateListingPageViewController: UIViewController, UIPageViewControllerDataSource {
 
-    // MARK: - Properties
+    // MARK: Properties
     var pageViewController: UIPageViewController!
-    var pageImages: NSArray!
-    var carouselTimer: NSTimer!
+    let contentViewControllers = ["AddPhotoViewController", "AddListingDetailsViewController"]
     
     // MARK: - Outlets
     @IBOutlet weak var pageControl: UIPageControl!
     
-    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,25 +26,18 @@ class HomeViewController: UIViewController, UIPageViewControllerDataSource {
         initializePageController()
         
         //Set the number of pages
-        pageControl.numberOfPages = pageImages.count
-        
-        startCarousel()
+        pageControl.numberOfPages = contentViewControllers.count
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Methods
-    func viewControllerAtIndex(index: Int) -> PhotoDisplayViewController {
+    func viewControllerAtIndex(index: Int) -> UIViewController {
         
-        // We use one content controller
-        // and populate it with with images
-        // from pageImages array
-        
-        let viewController = storyboard?.instantiateViewControllerWithIdentifier("PhotoDisplayViewController") as! PhotoDisplayViewController
-        viewController.imageFile = pageImages[index] as! String
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier(contentViewControllers[index]) as! PageContentViewController
         viewController.pageIndex = index
         return viewController
     }
@@ -55,9 +46,6 @@ class HomeViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Get page view controller from storyboard
         pageViewController = storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
-        
-        // Set the filenames from the images
-        pageImages = ["", "", ""]
         
         // Set the data source
         pageViewController.dataSource = self
@@ -74,6 +62,7 @@ class HomeViewController: UIViewController, UIPageViewControllerDataSource {
         view.insertSubview(pageViewController.view, atIndex: 0)
         pageViewController.didMoveToParentViewController(self)
     }
+    
     
     // MARK: - Page View Controller Data Source Methods
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -110,73 +99,12 @@ class HomeViewController: UIViewController, UIPageViewControllerDataSource {
         index++
         
         // Check index bounds
-        if index == pageImages.count {
+        if index == contentViewControllers.count {
             return nil
         }
         
         // Update pageControl
         pageControl.currentPage = index
         return viewControllerAtIndex(index)
-    }
-    
-    // MARK: - Actions
-    @IBAction func touchSignInButton(sender: UIButton) {
-        
-        // Present sign in controller
-        if let viewController = storyboard?.instantiateViewControllerWithIdentifier("SignInViewController") {
-            presentViewController(viewController, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func touchCreateAccountButton(sender: UIButton) {
-        
-        // Present sign in controller
-        if let viewController = storyboard?.instantiateViewControllerWithIdentifier("SignUpViewController") {
-            presentViewController(viewController, animated: true, completion: nil)
-        }
-    }
-}
-
-// MARK: - Extension
-extension HomeViewController {
-    
-    // MARK: - Carousel Methods
-    func startCarousel() {
-        
-        if carouselTimer == nil {
-            // Start timer with intervals
-            carouselTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("moveCarousel"), userInfo: nil, repeats: true)
-            
-        }
-    }
-    
-    func moveCarousel() {
-        
-        // Get the index
-        var index: Int = (pageViewController.viewControllers?.first as! PageContentViewController).pageIndex
-        
-        // Increment or start over
-        if index == pageImages.count - 1 {
-            index = 0
-        } else {
-            index++
-        }
-        
-        // Present content controller
-        let contentViewControllerToDisplay = viewControllerAtIndex(index)
-        pageViewController.setViewControllers([contentViewControllerToDisplay], direction: .Forward, animated: true, completion: nil)
-        
-        // Update pageControl
-        pageControl.currentPage = contentViewControllerToDisplay.pageIndex
-    }
-    
-    func stopCarousel() {
-        
-        if carouselTimer != nil {
-            
-            // Stop timer
-            carouselTimer.invalidate()
-            carouselTimer = nil
-        }
     }
 }

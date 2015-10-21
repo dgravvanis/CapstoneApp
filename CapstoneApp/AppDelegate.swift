@@ -19,6 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // Register Parse Subclasses
+        Listing.registerSubclass()
+        Photo.registerSubclass()
+        
+        // Enable Parse Local Datastore
+        Parse.enableLocalDatastore()
+        
         // Get the keys from the plist file
         if let filePath = NSBundle.mainBundle().pathForResource("Keys", ofType:"plist"),
             let privateKeys = NSDictionary(contentsOfFile:filePath),
