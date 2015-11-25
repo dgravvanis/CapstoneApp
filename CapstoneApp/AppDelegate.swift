@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Register Parse Subclasses
         Listing.registerSubclass()
         Photo.registerSubclass()
+        Bid.registerSubclass()
         
         // Enable Parse Local Datastore
         Parse.enableLocalDatastore()
@@ -43,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if PFUser.currentUser() != nil {
             
             let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let rootView = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController")
+            let rootView = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController")
             window?.rootViewController = rootView
         }
         

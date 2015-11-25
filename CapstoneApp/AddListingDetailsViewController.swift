@@ -43,7 +43,7 @@ class AddListingDetailsViewController: PageContentViewController, UIImagePickerC
         
         let price = NSNumber(integer: Int(startingPriceTextField.text!)!)
         
-        let newListing = Listing(title: titleTextField.text!, startingPrice: price , itemDescription: descriptionTextView.text, fromUser: PFUser.currentUser()!)
+        let newListing = Listing(title: titleTextField.text!, startingPrice: price , itemDescription: descriptionTextView.text, fromUser: PFUser.currentUser()!, endTimeInterval: 3600)
         
         for imageFile in SharingManager.sharedInstance.imageFiles {
             

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B7094F301BC94F4A004BAF10 /* CreateListingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7094F2F1BC94F4A004BAF10 /* CreateListingPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B7094F321BC968CF004BAF10 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7094F311BC968CF004BAF10 /* PageContentViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B70B120A1BC4E9F500F5D500 /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B12091BC4E9F500F5D500 /* PhotoDisplayViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B70B120C1BC4EDA200F5D500 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B120B1BC4EDA200F5D500 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B7094F301BC94F4A004BAF10 /* CreateListingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7094F2F1BC94F4A004BAF10 /* CreateListingPageViewController.swift */; };
+		B7094F321BC968CF004BAF10 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7094F311BC968CF004BAF10 /* PageContentViewController.swift */; };
+		B70B120A1BC4E9F500F5D500 /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B12091BC4E9F500F5D500 /* PhotoDisplayViewController.swift */; };
+		B70B120C1BC4EDA200F5D500 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B120B1BC4EDA200F5D500 /* HomeViewController.swift */; };
 		B71677C01BBECBCB002CCD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677BF1BBECBCB002CCD4B /* AppDelegate.swift */; };
 		B71677C21BBECBCB002CCD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677C11BBECBCB002CCD4B /* ViewController.swift */; };
 		B71677C51BBECBCB002CCD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71677C31BBECBCB002CCD4B /* Main.storyboard */; };
@@ -19,14 +19,14 @@
 		B71677CD1BBECBCB002CCD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71677CB1BBECBCB002CCD4B /* LaunchScreen.storyboard */; };
 		B71677D81BBECBCB002CCD4B /* CapstoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677D71BBECBCB002CCD4B /* CapstoneAppTests.swift */; };
 		B71677E31BBECBCB002CCD4B /* CapstoneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677E21BBECBCB002CCD4B /* CapstoneAppUITests.swift */; };
-		B71677F11BBECE4E002CCD4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B71677F01BBECE4E002CCD4B /* README.md */; settings = {ASSET_TAGS = (); }; };
-		B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */; settings = {ASSET_TAGS = (); }; };
-		B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */; settings = {ASSET_TAGS = (); }; };
-		B71677FA1BBEDE24002CCD4B /* FiatTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		B71677FC1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		B71678221BBEEE41002CCD4B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71678211BBEEE41002CCD4B /* Keys.plist */; settings = {ASSET_TAGS = (); }; };
-		B71678251BBEF733002CCD4B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71678241BBEF733002CCD4B /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		B71678271BBEF745002CCD4B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71678261BBEF745002CCD4B /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		B71677F11BBECE4E002CCD4B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B71677F01BBECE4E002CCD4B /* README.md */; };
+		B71677F61BBECFB8002CCD4B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F51BBECFB8002CCD4B /* CoreDataStack.swift */; };
+		B71677F81BBED1FA002CCD4B /* BitcoinAverageApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */; };
+		B71677FA1BBEDE24002CCD4B /* FiatTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */; };
+		B71677FC1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */; };
+		B71678221BBEEE41002CCD4B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71678211BBEEE41002CCD4B /* Keys.plist */; };
+		B71678251BBEF733002CCD4B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71678241BBEF733002CCD4B /* Parse.framework */; };
+		B71678271BBEF745002CCD4B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71678261BBEF745002CCD4B /* Bolts.framework */; };
 		B71678291BBEF7D8002CCD4B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71678281BBEF7D8002CCD4B /* AudioToolbox.framework */; };
 		B716782B1BBEF7E6002CCD4B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716782A1BBEF7E6002CCD4B /* CFNetwork.framework */; };
 		B716782D1BBEF7F5002CCD4B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716782C1BBEF7F5002CCD4B /* CoreGraphics.framework */; };
@@ -39,19 +39,24 @@
 		B716783B1BBEF875002CCD4B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783A1BBEF875002CCD4B /* libsqlite3.tbd */; };
 		B716783D1BBEF8A5002CCD4B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783C1BBEF8A5002CCD4B /* Accounts.framework */; };
 		B716783F1BBEF8B1002CCD4B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B716783E1BBEF8B1002CCD4B /* Social.framework */; };
-		B719C1551BD613B9005543D5 /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719C1541BD613B9005543D5 /* SharingManager.swift */; settings = {ASSET_TAGS = (); }; };
-		B71A69811BC39D12005BFFFC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A69801BC39D12005BFFFC /* SignInViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B71AAB2C1BC64E74009A6627 /* AddListingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AAB2B1BC64E74009A6627 /* AddListingDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B71AAB2E1BC64F61009A6627 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AAB2D1BC64F61009A6627 /* Listing.swift */; settings = {ASSET_TAGS = (); }; };
-		B742FCCF1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		B75414A11BC6A2CA0098E15F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A01BC6A2CA0098E15F /* Photo.swift */; settings = {ASSET_TAGS = (); }; };
-		B75414A31BC6CA0E0098E15F /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A21BC6CA0E0098E15F /* AddPhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B75414A51BC6DC4D0098E15F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A41BC6DC4D0098E15F /* PhotoCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		B79C5B6F1BC01B5D00BAB262 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B79C5B711BC0308900BAB262 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B701BC0308900BAB262 /* EmailTextField.swift */; settings = {ASSET_TAGS = (); }; };
-		B79C5B731BC039BD00BAB262 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */; settings = {ASSET_TAGS = (); }; };
-		B79C5B751BC03AA800BAB262 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B741BC03AA800BAB262 /* UsernameTextField.swift */; settings = {ASSET_TAGS = (); }; };
-		B79C5B771BC042A600BAB262 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B761BC042A600BAB262 /* UITextFieldExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		B719C1551BD613B9005543D5 /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719C1541BD613B9005543D5 /* SharingManager.swift */; };
+		B71A69811BC39D12005BFFFC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A69801BC39D12005BFFFC /* SignInViewController.swift */; };
+		B71AAB2C1BC64E74009A6627 /* AddListingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AAB2B1BC64E74009A6627 /* AddListingDetailsViewController.swift */; };
+		B71AAB2E1BC64F61009A6627 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71AAB2D1BC64F61009A6627 /* Listing.swift */; };
+		B72FBFA51BD7D8EB004CE30A /* ListingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72FBFA41BD7D8EB004CE30A /* ListingsTableViewController.swift */; };
+		B731082E1BE2799B00E3A890 /* ListingPhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731082D1BE2799B00E3A890 /* ListingPhotoDisplayViewController.swift */; };
+		B742FCCF1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */; };
+		B75414A11BC6A2CA0098E15F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A01BC6A2CA0098E15F /* Photo.swift */; };
+		B75414A31BC6CA0E0098E15F /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A21BC6CA0E0098E15F /* AddPhotoViewController.swift */; };
+		B75414A51BC6DC4D0098E15F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75414A41BC6DC4D0098E15F /* PhotoCollectionViewCell.swift */; };
+		B7642EAA1BE3C3FA00D398B8 /* BidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7642EA91BE3C3FA00D398B8 /* BidViewController.swift */; };
+		B7642EAC1BE3D25000D398B8 /* Bid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7642EAB1BE3D25000D398B8 /* Bid.swift */; };
+		B76BFC601BDE75B2006DA25E /* ListingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76BFC5F1BDE75B2006DA25E /* ListingDetailViewController.swift */; };
+		B79C5B6F1BC01B5D00BAB262 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */; };
+		B79C5B711BC0308900BAB262 /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B701BC0308900BAB262 /* EmailTextField.swift */; };
+		B79C5B731BC039BD00BAB262 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */; };
+		B79C5B751BC03AA800BAB262 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B741BC03AA800BAB262 /* UsernameTextField.swift */; };
+		B79C5B771BC042A600BAB262 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79C5B761BC042A600BAB262 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,10 +119,15 @@
 		B71A69801BC39D12005BFFFC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B71AAB2B1BC64E74009A6627 /* AddListingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListingDetailsViewController.swift; sourceTree = "<group>"; };
 		B71AAB2D1BC64F61009A6627 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		B72FBFA41BD7D8EB004CE30A /* ListingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsTableViewController.swift; sourceTree = "<group>"; };
+		B731082D1BE2799B00E3A890 /* ListingPhotoDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingPhotoDisplayViewController.swift; sourceTree = "<group>"; };
 		B742FCCE1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		B75414A01BC6A2CA0098E15F /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B75414A21BC6CA0E0098E15F /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		B75414A41BC6DC4D0098E15F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7642EA91BE3C3FA00D398B8 /* BidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BidViewController.swift; sourceTree = "<group>"; };
+		B7642EAB1BE3D25000D398B8 /* Bid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bid.swift; sourceTree = "<group>"; };
+		B76BFC5F1BDE75B2006DA25E /* ListingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingDetailViewController.swift; sourceTree = "<group>"; };
 		B79C5B6E1BC01B5D00BAB262 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B79C5B701BC0308900BAB262 /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
 		B79C5B721BC039BD00BAB262 /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
@@ -229,6 +239,7 @@
 				B71677F71BBED1FA002CCD4B /* BitcoinAverageApiClient.swift */,
 				B71AAB2D1BC64F61009A6627 /* Listing.swift */,
 				B75414A01BC6A2CA0098E15F /* Photo.swift */,
+				B7642EAB1BE3D25000D398B8 /* Bid.swift */,
 				B719C1541BD613B9005543D5 /* SharingManager.swift */,
 			);
 			name = Model;
@@ -259,6 +270,10 @@
 				B75414A21BC6CA0E0098E15F /* AddPhotoViewController.swift */,
 				B71677F91BBEDE24002CCD4B /* FiatTextFieldDelegate.swift */,
 				B71677FB1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift */,
+				B72FBFA41BD7D8EB004CE30A /* ListingsTableViewController.swift */,
+				B76BFC5F1BDE75B2006DA25E /* ListingDetailViewController.swift */,
+				B731082D1BE2799B00E3A890 /* ListingPhotoDisplayViewController.swift */,
+				B7642EA91BE3C3FA00D398B8 /* BidViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -435,6 +450,7 @@
 				B7094F321BC968CF004BAF10 /* PageContentViewController.swift in Sources */,
 				B71AAB2E1BC64F61009A6627 /* Listing.swift in Sources */,
 				B71677C81BBECBCB002CCD4B /* CapstoneApp.xcdatamodeld in Sources */,
+				B731082E1BE2799B00E3A890 /* ListingPhotoDisplayViewController.swift in Sources */,
 				B75414A51BC6DC4D0098E15F /* PhotoCollectionViewCell.swift in Sources */,
 				B71677FC1BBEE085002CCD4B /* BitcoinTextFieldDelegate.swift in Sources */,
 				B70B120C1BC4EDA200F5D500 /* HomeViewController.swift in Sources */,
@@ -445,9 +461,13 @@
 				B71677F11BBECE4E002CCD4B /* README.md in Sources */,
 				B79C5B731BC039BD00BAB262 /* PasswordTextField.swift in Sources */,
 				B79C5B771BC042A600BAB262 /* UITextFieldExtension.swift in Sources */,
+				B7642EAA1BE3C3FA00D398B8 /* BidViewController.swift in Sources */,
 				B71677C01BBECBCB002CCD4B /* AppDelegate.swift in Sources */,
 				B742FCCF1BC2B9EF008EC0E8 /* UIViewControllerExtension.swift in Sources */,
+				B7642EAC1BE3D25000D398B8 /* Bid.swift in Sources */,
 				B75414A31BC6CA0E0098E15F /* AddPhotoViewController.swift in Sources */,
+				B76BFC601BDE75B2006DA25E /* ListingDetailViewController.swift in Sources */,
+				B72FBFA51BD7D8EB004CE30A /* ListingsTableViewController.swift in Sources */,
 				B79C5B751BC03AA800BAB262 /* UsernameTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

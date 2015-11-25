@@ -10,18 +10,23 @@ import UIKit
 import Parse
 
 // MARK: Class
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
 
     // MARK: - Properties
     var currentUser: PFUser?
     
     // MARK: - Outlets
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        searchBar.delegate = self
+        
+        BitcoinAverageClient.sharedInstance.updateBitcoinRateForCurrency("USD")
         
         currentUser = PFUser.currentUser()
         
@@ -40,6 +45,33 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "SearchForListing" {
+            
+            let viewController = segue.destinationViewController as! ListingsTableViewController
+            viewController.searchString = searchBar.text?.lowercaseString
+        }
+    }
+    
+    // MARK: - Search Bar Delegate Methods
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        
+        searchBar.resignFirstResponder()
+        
+        if searchBar.text != nil {
+            performSegueWithIdentifier("SearchForListing", sender: nil)
+        }
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
+        // Hide the search bar
+        searchBar.resignFirstResponder()
+        searchBar.text = ""
     }
 
     // MARK: - Methods

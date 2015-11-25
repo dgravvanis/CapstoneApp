@@ -107,4 +107,10 @@ class CreateListingPageViewController: UIViewController, UIPageViewControllerDat
         pageControl.currentPage = index
         return viewControllerAtIndex(index)
     }
+    
+    // MARK: - Actions
+    @IBAction func cancelButtonPress(sender: UIButton) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
